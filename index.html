@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+	<head> 
+    
+		<title>Dynamic Quiz Project</title>
+		<link type='text/css' rel='stylesheet' href='style.css'/>
+		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open Sans"/>
+	</head>
+	<body>
+		<div id='container'>
+			<div id='title'>
+				<h1>Learning Js #Assignment Quiz App</h1>
+			</div>
+   			<br/>
+  			<div id='quiz'></div>
+			  <div class="question">
+				  <h1>Question #1</h1>
+				  
+				  <span id="option1">what is the ans of 9*8</span><br>
+				  <input type="radio" id="option2" value="49" name="radio">49<br>
+				   <input type="radio" id="option2" value="56" name="radio">6<br>
+				    <input type="radio" id="option2" value="67" name="radio">5<br>
+					 <input type="radio" id="option2" value="72 " name="radio">3<br>
+				  <div class='button' id='next' onclick="next(0,1)"><a href='#'>Next</a></div>
+				  
+    		
+			  </div>
+			  <div class="question">
+				  <h1>Question #2</h1>
+				  <span id="option1">what is the ans of 8*8</span><br>
+				  <input type="radio" id="option2" value="4" name="radio">4<br>
+				   <input type="radio" id="option2" value="6" name="radio">6<br>
+				    <input type="radio" id="option2" value="5" name="radio">5<br>
+					 <input type="radio" id="option2" value="3 " name="radio">3<br>
+				  <div class='button' id='next' onclick="next(1,2)"><a href='#'>Next</a></div>
+				  <div class='button' id='prev'onclick="back(0,1)"><a href='#'>Prev</a></div>
+			  </div>
+			  <div class="question">
+				  <h1>Question #3</h1>
+				  
+				  <span id="option1">what is the ans of 7*9</span><br>
+				  <input type="radio" id="option2" value="4" name="radio">4<br>
+				   <input type="radio" id="option2" value="6" name="radio">6<br>
+				    <input type="radio" id="option2" value="5" name="radio">5<br>
+					 <input type="radio" id="option2" value="3 " name="radio">3<br>
+					 <div class='button' id='next' onclick="next(2,3)"><a href='#'>Next</a></div>
+				  <div class='button' id='prev'onclick="back(1,2)"><a href='#'>Prev</a></div>
+				  
+			  </div>
+			  <div class="question">
+				  <h1>Question #4</h1>
+				  <span id="option1">what is the ans of 12*9</span><br>
+				  <input type="radio" id="option2" value="4" name="radio">4<br>
+				   <input type="radio" id="option2" value="6" name="radio">6<br>
+				    <input type="radio" id="option2" value="5" name="radio">5<br>
+					 <input type="radio" id="option2" value="3 " name="radio">3<br>
+				  <div class='button' id='next' onclick="next(3,4)"><a href='#'>Next</a></div>
+				  <div class='button' id='prev'onclick="back(2,3)"><a href='#'>Prev</a></div>
+			  </div>
+               <div class="question">
+				  <h1>Question #5</h1>
+				  <span id="option1">what is the ans of 4*9</span><br>
+				  <input type="radio" id="option2" value="4" name="radio">4<br>
+				   <input type="radio" id="option2" value="6" name="radio">6<br>
+				    <input type="radio" id="option2" value="5" name="radio">5<br>
+					 <input type="radio" id="option2" value="3 " name="radio">3<br>
+				  <div class='button' id='next' onclick="next(4,5)"><a href='#'>Next</a></div>
+				  <div class='button' id='prev'onclick="back(3,4)"><a href='#'>Prev</a></div>
+			  </div>
+               <div class="question">
+				  <h1>Question #6</h1>
+				  <span id="option1">what is the ans of 11*9</span><br>
+				  <input type="radio" id="option2" value="4" name="radio">4<br>
+				   <input type="radio" id="option2" value="6" name="radio">6<br>
+				    <input type="radio" id="option2" value="5" name="radio">5<br>
+					 <input type="radio" id="option2" value="3 " name="radio">3<br>
+				  <div class='button' id='next' onclick="next(5,6)"><a href='#'>Next</a></div>
+				  <div class='button' id='prev'onclick="back(4,5)"><a href='#'>Prev</a></div>
+			  </div>
+             <div class="question">
+				  <h1>Question #7</h1>
+				  <span id="option1">what is the ans of 7*8</span><br>
+				  <input type="radio" id="option2" value="4" name="radio">4<br>
+				   <input type="radio" id="option2" value="6" name="radio">6<br>
+				    <input type="radio" id="option2" value="5" name="radio">5<br>
+					 <input type="radio" id="option2" value="3 " name="radio">3<br>
+				  <div class='button' id='next' onclick="next(6,7)"><a href='#'>Next</a></div>
+				  <div class='button' id='prev'onclick="back(5,6)"><a href='#'>Prev</a></div>
+			  </div>
+			   <div class="question">
+				  <h1>Question #8</h1>
+				  <span id="option1">what is the ans of 9*9</span><br>
+				  <input type="radio" id="option2" value="4" name="radio">4<br>
+				   <input type="radio" id="option2" value="6" name="radio">6<br>
+				    <input type="radio" id="option2" value="5" name="radio">5<br>
+					 <input type="radio" id="option2" value="3 " name="radio">3<br>
+				  <div class='button' id='next' onclick="next(7,8)"><a href='#'>Next</a></div>
+				  <div class='button' id='prev'onclick="back(6,7)"><a href='#'>Prev</a></div>
+			  </div>
+			   <div class="question">
+				  <h1>Question #9</h1>
+				  <span id="option1">what is the ans of 5*9</span><br>
+				  <input type="radio" id="option2" value="4" name="radio">4<br>
+				   <input type="radio" id="option2" value="6" name="radio">6<br>
+				    <input type="radio" id="option2" value="5" name="radio">5<br>
+					 <input type="radio" id="option2" value="3 " name="radio">3<br>
+				  <div class='button' id='next' onclick="next(8,9)"><a href='#'>Next</a></div>
+				  <div class='button' id='prev'onclick="back(7,8)"><a href='#'>Prev</a></div>
+			  </div>
+			   <div class="question">
+				  <h1>Question #10</h1>
+				  <span id="option1">what is the ans of 6*9</span><br>
+				  <input type="radio" id="option2" value="4" name="radio">4<br>
+				   <input type="radio" id="option2" value="6" name="radio">6<br>
+				    <input type="radio" id="option2" value="5" name="radio">5<br>
+					 <input type="radio" id="option2" value="3 " name="radio">3<br>
+				  <div class='button' id='next' onclick="next(9,9)"><a href='#'>Next</a></div>
+				  <div class='button' id='prev'onclick="back(8,9)"><a href='#'>Prev</a></div>
+			  </div>
+			  <p id="check"></p>
+    		
+    		<div class='button' id='start' onclick="start()"> <a href='#'>Start Over</a></div>
+    		
+    		<!-- <button class='' id='next'>Next</a></button>
+    		<button class='' id='prev'>Prev</a></button>
+    		<button class='' id='start'> Start Over</a></button> -->
+    	</div>
+
+		<!--<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js'></script>
+		<script type="text/javascript" src='questions.json'></script>-->
+		<script type='text/javascript' src='ap.js'></script>
+	</body>
+</html>
